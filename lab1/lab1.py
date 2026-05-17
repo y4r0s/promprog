@@ -1,4 +1,4 @@
-def binary_search(arr: list, target: int) -> int:
+def binary_search(arr: list, target: int) -> int | str:
     """Выполняет бинарный поиск элемента в отсортированном массиве.
 
     Args:
@@ -10,6 +10,9 @@ def binary_search(arr: list, target: int) -> int:
     """
     low = 0
     high = len(arr) - 1
+
+    if(len(arr)) == 0:
+        return "Введите ненулевой список"
 
     while low <= high:
         mid = (low + high) // 2
