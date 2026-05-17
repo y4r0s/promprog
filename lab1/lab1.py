@@ -1,4 +1,4 @@
-def binary_search(arr, target):
+def binary_search(arr: list, target: int) -> int:
     low = 0
     high = len(arr)-1
     mid = (low+high)//2
