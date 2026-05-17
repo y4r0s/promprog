@@ -5,13 +5,13 @@ def binary_search(arr: list, target: int) -> int | str:
         arr (list): Отсортированный список элементов для поиска.
         target (int): Искомое значение.
 
-    Returns:
+    Return:
         int: Индекс найденного элемента в массиве или -1, если элемент не найден.
     """
     low = 0
     high = len(arr) - 1
 
-    if(len(arr)) == 0:
+    if len(arr) == 0:
         return "Введите ненулевой список"
 
     while low <= high:
