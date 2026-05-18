@@ -12,7 +12,9 @@ def binary_search(arr: list, target: int) -> int | str:
     high = len(arr) - 1
 
     if len(arr) == 0:
-        return "Ошибка: передан пустой массив!"
+
+        return "Ошибка: передан пустой массив! Список не должен быть пустым."
+
 
     while low <= high:
         mid = (low + high) // 2
